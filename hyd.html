@@ -1,0 +1,120 @@
+<!DOCUTYPE html>
+<html>
+<head>
+<title>coustmer website </title>
+    
+       <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  
+         <div class="sause">
+       <a href="Home.html"> Home</a>
+<hr>
+<a href="vij.html">vijayawada</a>
+            <hr>
+<a href="viz.html">vizag</a>
+            <hr>
+<a href="hyd.html">hyderabad</a>
+            <hr>
+<a href="calcu.html"> claculations </a>
+             <hr>
+             
+        </div>
+
+    <div class="sause1">
+       <a href="https://www.facebook.com/sahas.kiran.1">
+    <img src="face%20book.jfif" width ="150px"  height ="90px">
+        </a>
+        <br> 
+         <a href="https://www.instagram.com/sahaskiran/">
+    <img src="instagram.jfif" width ="150px"  height ="90px">
+        </a>
+        <br>
+          <a href="https://twitter.com/sahas_kiran">
+    <img src="twitter.jfif" width ="150px"  height ="90px">
+        </a>
+         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <a href="https://www.rmhoffman.com/store/c1/Featured_Products.html">
+    <img src="moto.jpg" width ="150px"  height ="120px">
+        </a>
+        <br>
+    <a href="https://oilprice.com/Energy/Energy-General/Oil-Pipelines-To-Be-Inspected-By-Robots.html">
+        <img src="moto1.jpg" width ="150px"  height ="120px"></a>
+        <br>
+        <br>
+        <a href="https://www.cnbc.com/2017/04/08/diakonts-robot-could-help-prevent-oil-and-gas-pipeline-spills.html">
+        <img src="moto2.jpg" width ="150px"  height ="120px"></a>
+        <br>
+        <br>
+    </div>
+
+
+<div class="main">
+    <center> <img src="kk.jpg" width="300px" height="300px" ></center>
+    <center><h1 style="color: indianred" > M.K robotics</h1></center>
+    <nav class ="menu">
+<ul id="menu">
+
+<li><a href="aboutus.html">about us</a></li>
+<li><a href="contactus.html">contact us</a></li>
+
+</ul>
+    <form class ="search-form">
+  <input type="text" placeholder="search">
+  <button>search</button>
+</form>
+    </nav>
+
+    <h1 text-allign:center style="color: "> HYDERABAD</h1>
+    <P style="font-size: 25px"> location:HYDERABAD<br>lattitude: 17.4402334<br>longitude: 78.3904439</P>
+    <div id="map"><br>
+      <br>
+      <br>
+    </div>
+    <p style="text-align: left;">
+      <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style> </p>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(17.4402334, 78.3904439); 
+  var mapOptions = {center: myCenter, zoom: 7};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    icon: "marker.png"
+  });
+  var infoWindowOptions = {
+    content: 'Hyderabad Gas Plant<br>Gas Station<br>Location(17.4402334,78.3904439)'
+};
+          
+  var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+google.maps.event.addListener(marker,'mouseover',function(e){
+  
+  infoWindow.open(map, marker);
+  
+});
+  
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsoiP3jgf2wiOoxLNaBLVYJ8xGEa2-290&callback=myMap"></script>
+
+   <p id="result" name="r1">
+<br />
+    </p>
+<footer> contact us <br> email:sahaskiran2020@gmail.com <br> phn no: 8295030338 </footer>
+    </div>
+
+</body>
+</html>
